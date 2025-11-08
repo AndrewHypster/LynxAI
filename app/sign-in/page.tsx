@@ -1,3 +1,4 @@
+'use client'
 import { GoogleButton } from "@/components/GoogleButton";
 import { SignInForm } from "../../components/sign-in-form";
 
