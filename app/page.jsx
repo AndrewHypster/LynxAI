@@ -1,0 +1,55 @@
+import { SimpleBtn } from "@/components/btns";
+import Image from "next/image";
+import "./main.css";
+
+export default function Home() {
+  return (
+    <>
+      <main className="main">
+        <Image
+          className="main-logo"
+          src="/imgs/lynxai-logo.png"
+          width={100}
+          height={100}
+          alt="logo"
+        />
+        <h1 className="main-title">LynxAI</h1>
+        <p className="main-desc">
+          Інноваційні IT-рішення для вашого бізнесу. Ми пропонуємо найкращі
+          послуги в сфері штучного інтелекту та технологій.
+        </p>
+        <div className="main-btns">
+          <SimpleBtn data-color="main">Наші послуги</SimpleBtn>
+          <SimpleBtn data-border="gray">Познайомитися з командою</SimpleBtn>
+        </div>
+      </main>
+
+      <section className="features">
+        <h2 className="features-title">Чому вибирають LynxAI?</h2>
+        <ul className="features-list">
+          <li className="features-item">
+            <b className="features-bold">🚀 Інноваційність</b>
+            <p className="features-desc">
+              Використовуємо найновіші технології та методи розробки для
+              досягнення найкращих результатів.
+            </p>
+          </li>
+          <li className="features-item">
+            <b className="features-bold">👥 Професійна команда</b>
+            <p className="features-desc">
+              Наша команда складається з досвідчених фахівців у галузі IT та
+              штучного інтелекту.
+            </p>
+          </li>
+          <li className="features-item">
+            <b className="features-bold">⚡ Швидкість</b>
+            <p className="features-desc">
+              Ми забезпечуємо швидку доставку проектів без компромісу щодо
+              якості.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </>
+  );
+}

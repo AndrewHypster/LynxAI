@@ -1,0 +1,69 @@
+.main {
+  padding: 16rem 0;
+  background: linear-gradient(var(--black), var(--gray));
+  justify-items: center;
+  gap: 4rem;
+  display: grid;
+}
+
+.main-logo {
+  height: 16rem;
+}
+
+.main-title {
+  font-size: 7rem;
+  color: var(--main);
+}
+
+.main-desc {
+  max-width: 680px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.main-btns {
+  height: 5rem;
+  gap: 2rem;
+  display: flex;
+}
+
+.features {
+  text-align: center;
+}
+
+.features-title {
+  font-size: 4rem;
+}
+
+.features-list {
+  margin-top: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  display: flex;
+}
+
+.features-item {
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem 4rem;
+  background-color: var(--gray);
+  border: solid var(--white) .08rem;
+  border-radius: 2rem;
+  text-align: left;
+  transition: all .3s;
+  gap: 1.5rem;
+  display: grid;
+}
+
+.features-item:hover {
+  transform: translateY(5%);
+}
+
+.features-bold {
+  font-size: 2.5rem;
+}
+
+.features-desc {
+  font-size: 1.8rem;
+}
