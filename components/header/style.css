@@ -39,7 +39,7 @@
 .header-burger {
   width: 4.5rem;
   gap: 1rem;
-  display: grid;
+  display: none;
 }
 
 .header-burger > div  {
@@ -58,7 +58,6 @@
   box-sizing: border-box;
   background-color: var(--black);
   transition: all .3s;
-  display: none;
 }
 .sidebar.open {
   transform: translateY(0);
@@ -117,7 +116,7 @@
   .header-nav, .header-btn {
     display: none;
   }
-  .sidebar {
-    display: block;
+  .header-burger {
+    display: grid;
   }
 }
