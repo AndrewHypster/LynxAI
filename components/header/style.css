@@ -58,6 +58,7 @@
   box-sizing: border-box;
   background-color: var(--black);
   transition: all .3s;
+  display: none;
 }
 .sidebar.open {
   transform: translateY(0);
@@ -116,7 +117,7 @@
   .header-nav, .header-btn {
     display: none;
   }
-  .sidebar-wrap {
+  .sidebar {
     display: block;
   }
 }
