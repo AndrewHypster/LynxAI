@@ -10,35 +10,65 @@ html {
   font-size: 8px;
   scroll-behavior: smooth;
   background-color: var(--black);
-} body {
+}
+body {
   min-height: 100dvh;
   font-family: var(--Montserrat);
   color: var(--white);
   flex-direction: column;
   display: flex;
-} button {
+}
+button {
   border: none;
   background: none;
   cursor: pointer;
-  transition: all .3s;
-} section {
+  transition: all 0.3s;
+}
+section {
   padding: 12rem 4rem;
-} main {
+}
+main {
   flex: 1 0 auto;
-} button:hover {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+button:hover {
   filter: brightness(1.2);
-} li {
+}
+li {
   list-style: none;
-} a {
+}
+a {
+  position: relative;
+  width: fit-content;
   color: var(--white);
   text-decoration: none;
-} img {
+  background: linear-gradient(90deg, var(--white)50%, var(--main)50%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1s;
+}
+a:hover {
+  animation: gradient 1s forwards;
+}
+img {
   max-width: 100vw;
   width: auto;
   height: auto;
-  object-fit: "contain"!important;
+  object-fit: "contain" !important;
 }
 
 body::-webkit-scrollbar {
   width: 0px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
 }
