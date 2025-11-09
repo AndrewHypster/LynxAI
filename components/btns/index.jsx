@@ -2,7 +2,7 @@ import './style.css'
 
 const SimpleBtn = ({ children, ...props }) => {
   return (
-    <button {...props} className="simple-btn">
+    <button {...props} className={`${props.className} simple-btn`}>
       {children}
     </button>
   );

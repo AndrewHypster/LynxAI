@@ -18,7 +18,7 @@ html {
   background: none;
   cursor: pointer;
   transition: all .3s;
-} section {
+} main, section {
   padding: 12rem 4rem;
 } button:hover {
   filter: brightness(1.2);

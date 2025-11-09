@@ -1,5 +1,4 @@
 .main {
-  padding: 16rem 0;
   background: linear-gradient(var(--black), var(--gray));
   justify-items: center;
   gap: 4rem;
@@ -24,6 +23,8 @@
 .main-btns {
   height: 5rem;
   gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
   display: flex;
 }
 
