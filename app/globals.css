@@ -11,15 +11,20 @@ html {
   scroll-behavior: smooth;
   background-color: var(--black);
 } body {
+  min-height: 100dvh;
   font-family: var(--Montserrat);
   color: var(--white);
+  flex-direction: column;
+  display: flex;
 } button {
   border: none;
   background: none;
   cursor: pointer;
   transition: all .3s;
-} main, section {
+} section {
   padding: 12rem 4rem;
+} main {
+  flex: 1 0 auto;
 } button:hover {
   filter: brightness(1.2);
 } li {

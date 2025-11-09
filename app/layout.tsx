@@ -24,7 +24,7 @@ export default function RootLayout({
         <body className={`antialiased`}>
           <OverlayProvider>
             <Header />
-            {children}
+            <main>{children}</main>
             <Footer />
           </OverlayProvider>
         </body>

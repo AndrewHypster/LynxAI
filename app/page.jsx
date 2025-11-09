@@ -5,24 +5,24 @@ import "./main.css";
 export default function Home() {
   return (
     <>
-      <main className="main">
+      <section className="hero">
         <Image
-          className="main-logo"
+          className="hero-logo"
           src="/imgs/lynxai-logo.png"
           width={100}
           height={100}
           alt="logo"
         />
-        <h1 className="main-title">LynxAI</h1>
-        <p className="main-desc">
+        <h1 className="hero-title">LynxAI</h1>
+        <p className="hero-desc">
           Інноваційні IT-рішення для вашого бізнесу. Ми пропонуємо найкращі
           послуги в сфері штучного інтелекту та технологій.
         </p>
-        <div className="main-btns">
-          <SimpleBtn data-color="main">Наші послуги</SimpleBtn>
+        <div className="hero-btns">
+          <SimpleBtn data-color="hero">Наші послуги</SimpleBtn>
           <SimpleBtn data-border="gray">Познайомитися з командою</SimpleBtn>
         </div>
-      </main>
+      </section>
 
       <section className="features">
         <h2 className="features-title">Чому вибирають LynxAI?</h2>
