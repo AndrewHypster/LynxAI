@@ -93,13 +93,34 @@ export default function Header() {
           <span className="header-logo-text">LynxAI</span>
         </div>
         <div className="sidebar-links">
-          <Link href="/about-us" className="sidebar-link">
+          <Link
+            href="/about-us"
+            className="sidebar-link"
+            onClick={() => {
+              hideOverlay();
+              useSide(false);
+            }}
+          >
             Про нас
           </Link>
-          <Link href="#" className="sidebar-link">
+          <Link
+            href="#"
+            className="sidebar-link"
+            onClick={() => {
+              hideOverlay();
+              useSide(false);
+            }}
+          >
             Команда
           </Link>
-          <Link href="#" className="sidebar-link">
+          <Link
+            href="#"
+            className="sidebar-link"
+            onClick={() => {
+              hideOverlay();
+              useSide(false);
+            }}
+          >
             Послуги
           </Link>
         </div>

@@ -25,9 +25,10 @@ button {
   transition: all 0.3s;
 }
 section {
-  padding: 12rem 4rem;
+  padding: 12rem 4rem 0;
 }
 main {
+  padding-bottom: 8rem;
   flex: 1 0 auto;
   justify-content: center;
   flex-direction: column;
@@ -102,7 +103,7 @@ body::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   html {
     font-size: 1.33vw;
   }
