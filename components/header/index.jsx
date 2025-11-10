@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <>
       <header className="header">
-        <Link href={pathname === "/" ? "#" : "/"} className="header-logo">
+        <Link href={pathname === "/" ? "#" : "/"} className="header-logo link-grad">
           <Image
             className="header-logo-img"
             src="/imgs/lynxai-logo.png"
@@ -29,13 +29,13 @@ export default function Header() {
         </Link>
 
         <nav className="header-nav">
-          <Link className="header-link" href="/about-us">
+          <Link className="header-link link-grad" href="/about-us">
             Про нас
           </Link>
-          <Link className="header-link" href="/our-team">
+          <Link className="header-link link-grad" href="/our-team">
             Команда
           </Link>
-          <Link className="header-link" href="#">
+          <Link className="header-link link-grad" href="#">
             Послуги
           </Link>
         </nav>
@@ -95,7 +95,7 @@ export default function Header() {
         <div className="sidebar-links">
           <Link
             href="/about-us"
-            className="sidebar-link"
+            className="sidebar-link link-grad"
             onClick={() => {
               hideOverlay();
               useSide(false);
@@ -105,7 +105,7 @@ export default function Header() {
           </Link>
           <Link
             href="/our-team"
-            className="sidebar-link"
+            className="sidebar-link link-grad"
             onClick={() => {
               hideOverlay();
               useSide(false);
@@ -115,7 +115,7 @@ export default function Header() {
           </Link>
           <Link
             href="#"
-            className="sidebar-link"
+            className="sidebar-link link-grad"
             onClick={() => {
               hideOverlay();
               useSide(false);

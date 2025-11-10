@@ -41,18 +41,21 @@ li {
   list-style: none;
 }
 a {
-  position: relative;
   width: fit-content;
   color: var(--white);
   text-decoration: none;
-  background: linear-gradient(90deg, var(--white)50%, var(--main)50%);
+  align-content: center;
+}
+.link-grad {
+  position: relative;
+  background: linear-gradient(90deg, var(--white) 50%, var(--main) 50%);
   background-size: 200% auto;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 1s;
   align-content: center;
 }
-a:hover {
+.link-grad:hover {
   animation: gradient 1s forwards;
 }
 input:-webkit-autofill,
@@ -75,13 +78,14 @@ input {
 }
 .input-box {
   overflow: hidden;
-  border: .3rem solid color-mix(in srgb, var(--gray) 80%, var(--white) 20%);
+  border: 0.3rem solid color-mix(in srgb, var(--gray) 80%, var(--white) 20%);
   border-radius: 1rem;
-  transition: all .3s;
+  transition: all 0.3s;
   display: flex;
 }
-.input-box:has(input:focus), .input-box:has(input:hover) {
-  border: .3rem solid var(--main);
+.input-box:has(input:focus),
+.input-box:has(input:hover) {
+  border: 0.3rem solid var(--main);
 }
 img {
   max-width: 100vw;

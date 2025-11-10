@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Slider from "../../components/slider";
 import "./style.css";
 import Image from "next/image";
+import Link from "next/link";
+import { SimpleBtn } from "@/components/btns";
 
 const OurTeam = () => {
   const [colors, setColors] = useState([]);
@@ -37,7 +39,7 @@ const OurTeam = () => {
       name: "Robert Mont",
       direction: "Підключення AI до баз даних",
       skills: ["OpenAI", "PhP", "GitHub", "Mongo DB"],
-    }
+    },
   ];
 
   useEffect(() => {
@@ -71,6 +73,9 @@ const OurTeam = () => {
           ))}
         </ul>
       </div>
+      <Link href={"/portfolio/" + item.name}>
+        <SimpleBtn className="card-btn" data-color='main'>Портфоліо</SimpleBtn>
+      </Link>
     </div>
   );
 
@@ -85,7 +90,6 @@ const OurTeam = () => {
         </p>
       </div>
 
-      {/* 🔹 Передаємо items і структуру */}
       <Slider items={sliderItems} renderItem={CardStructure} />
     </section>
   );
