@@ -9,41 +9,35 @@ const OurTeam = () => {
 
   const sliderItems = [
     {
-      img: "/imgs/team/Patric.png",
+      img: "/imgs/team/patric.png",
       name: "Patrik Star",
       direction: "Створення AI ботів",
       skills: ["OpenAI", "Python", "React", "Figma"],
     },
     {
-      img: "/imgs/team/Patric.png",
+      img: "/imgs/team/patric.png",
       name: "Robert Mont",
       direction: "Підключення AI до баз даних",
       skills: ["OpenAI", "PhP", "GitHub", "Mongo DB"],
     },
     {
-      img: "/imgs/team/Patric.png",
+      img: "/imgs/team/patric.png",
       name: "Sendi Rosin",
       direction: "Веб розробка",
       skills: ["Next.js", "Redux-Toolkit", "API", "Figma"],
     },
     {
-      img: "/imgs/team/Patric.png",
+      img: "/imgs/team/patric.png",
       name: "Patrik Star",
       direction: "Створення AI ботів",
       skills: ["OpenAI", "Python", "React", "Figma"],
     },
     {
-      img: "/imgs/team/Patric.png",
+      img: "/imgs/team/patric.png",
       name: "Robert Mont",
       direction: "Підключення AI до баз даних",
       skills: ["OpenAI", "PhP", "GitHub", "Mongo DB"],
-    },
-    {
-      img: "/imgs/team/Patric.png",
-      name: "Sendi Rosin",
-      direction: "Веб розробка",
-      skills: ["Next.js", "Redux-Toolkit", "API", "Figma"],
-    },
+    }
   ];
 
   useEffect(() => {
