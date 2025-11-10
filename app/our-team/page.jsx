@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Slider from "../../components/slider";
 import "./style.css";
+import Image from "next/image";
 
 const OurTeam = () => {
   const [colors, setColors] = useState([]);
@@ -52,7 +53,7 @@ const OurTeam = () => {
   // 🔹 Компонент, який описує структуру однієї картки
   const CardStructure = ({ item, cardRef }) => (
     <div className="card" ref={cardRef}>
-      <img
+      <Image
         className="card-img"
         src={item.img}
         width={100}
