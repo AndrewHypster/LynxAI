@@ -29,7 +29,7 @@ export default function Header() {
         </Link>
 
         <nav className="header-nav">
-          <Link className="header-link" href="#">
+          <Link className="header-link" href="/about-us">
             Про нас
           </Link>
           <Link className="header-link" href="#">
@@ -58,15 +58,27 @@ export default function Header() {
           </SimpleBtn>
         )}
 
-        <button onClick={() => {showOverlay(); useSide(true)}} className="header-burger">
+        <button
+          onClick={() => {
+            showOverlay();
+            useSide(true);
+          }}
+          className="header-burger"
+        >
           <div></div>
           <div></div>
           <div></div>
         </button>
       </header>
 
-      <aside className={`sidebar ${side?'open':'close'}`}>
-        <button onClick={() => { hideOverlay(); useSide(false) }} className="sidebar-close">
+      <aside className={`sidebar ${side ? "open" : "close"}`}>
+        <button
+          onClick={() => {
+            hideOverlay();
+            useSide(false);
+          }}
+          className="sidebar-close"
+        >
           <div></div>
           <div></div>
         </button>
@@ -81,7 +93,7 @@ export default function Header() {
           <span className="header-logo-text">LynxAI</span>
         </div>
         <div className="sidebar-links">
-          <Link href="#" className="sidebar-link">
+          <Link href="/about-us" className="sidebar-link">
             Про нас
           </Link>
           <Link href="#" className="sidebar-link">

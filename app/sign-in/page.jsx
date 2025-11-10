@@ -1,12 +1,16 @@
 "use client";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import { GoogleButton } from "@/components/GoogleButton";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import "./style.css";
+import Image from "next/image";
+import Link from "next/link";
+import { SimpleBtn } from "@/components/btns";
 
 function SignInContent() {
   const router = useRouter();
+  const [passShow, usePassShow] = useState(false)
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -25,19 +29,44 @@ function SignInContent() {
 
   return (
     <div className="signin">
-      <h1 className="signin-title">Sign In</h1>
-      <GoogleButton />
+      <div className="signin-top">
+        <Image src="/imgs/lynxai-logo.png" width="50" height={50} alt="logo" />
+        <h1 className="signin-title">LynxAI</h1>
+      </div>
+
       <form className="signin-form" onSubmit={handleSubmit}>
-        <input className="signin-inpt" type="email" name="email" required />
-        <input
-          className="signin-inpt"
-          type="password"
-          name="password"
-          required
-        />
-        <button className="signin-btn" type="submit">
-          Ввійти
-        </button>
+        <div className="signin-item">
+          <label htmlFor="email">Логін</label>
+          <div className="input-box">
+            <input
+              className="signin-inpt"
+              type="email"
+              name="email"
+              id="email"
+              autoComplete="email"
+              required
+            />
+          </div>
+        </div>
+        <div className="signin-item">
+          <label htmlFor="password">Пароль</label>
+          <div className="input-box">
+            <input
+              className="signin-inpt"
+              type={passShow?'text': "password"}
+              name="password"
+              id="password"
+              autoComplete="current-password"
+              required
+            />
+            <Link className="inpt-shov-btn" href='' onClick={()=>usePassShow(!passShow)}>{passShow?'Сховати':'Показати'}</Link>
+          </div>
+        </div>
+
+        <SimpleBtn className="signin-btn" type="submit" data-color='main'>
+          Увійти
+        </SimpleBtn>
+        <GoogleButton />
       </form>
     </div>
   );

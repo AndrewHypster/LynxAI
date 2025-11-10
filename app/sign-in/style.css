@@ -2,20 +2,49 @@
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
-  padding: 8rem 2rem 2rem;
-  border: .10rem solid var(--white);
-  border-radius: 2rem;
+  padding: 4rem 2rem 2rem;
   align-self: center;
+  text-align: center;
 }
 
+.signin-title {
+  margin-bottom: 4rem;
+  color: var(--main);
+  font-size: 4rem;
+  gap: 2rem;
+  display: grid;
+}
+
+.signin-form {
+  padding: 4rem;
+  background-color: var(--gray);
+  border: .1rem solid color-mix(in srgb, var(--gray) 80%, var(--white) 20%);
+  border-radius: 1.5rem;
+  gap: 2rem;
+  display: grid;
+}
+
+.signin-item {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: left;
+  gap: 1rem;
+  display: grid;
+}
+
+.inpt-shov-btn {
+  color: var(--white);
+  margin-right: 2rem;
+}
 
 /* #region Google button */
 .googleBtn {
-  height: 4rem;
-  padding: 1rem 3rem;
+  height: 6.2rem;
+  padding: 2rem 3rem;
   background-color: var(--white);
   border-radius: .5rem;
   gap: 1.5rem;
+  justify-content: center;
   display: flex;
 }
 .googleBtn-txt {
@@ -41,3 +70,9 @@
   }
 }
 /* #endregion Google button */
+
+@media (max-width: 600px) {
+  .signin {
+    width: 80vw;
+  }
+}

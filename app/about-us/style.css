@@ -1,0 +1,23 @@
+.about-history {
+  align-self: flex-start;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  display: grid;
+}
+
+.about-title {
+  margin-bottom: 8rem;
+  font-size: 8rem;
+  font-weight: 900;
+  color: var(--main);
+}
+
+.about-history-desc {
+  font-size: 2.5rem;
+}
+
+.about-history-logo {
+  width: 70%;
+  margin: auto;
+}
+
