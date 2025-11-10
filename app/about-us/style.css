@@ -21,3 +21,14 @@
   margin: auto;
 }
 
+@media (max-width: 900px) {
+  .about-history {
+    grid-template-columns: 1fr;
+  }
+  .about-title {
+    font-size: 12rem;
+  }
+  .about-history-desc {
+    font-size: 4rem;
+  }
+}
