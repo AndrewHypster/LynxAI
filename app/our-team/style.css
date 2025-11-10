@@ -1,0 +1,54 @@
+.team-title {
+  margin-bottom: 2rem;
+  font-size: 7rem;
+  font-weight: 900;
+  color: var(--main);
+  text-transform: uppercase;
+}
+
+.team-desc {
+  font-size: 3rem;
+}
+
+.team-top {
+  margin-bottom: 8rem;
+}
+
+.swiper-slide {
+  justify-content: center;
+  gap: 8rem;
+  display: flex !important;
+}
+
+.card {
+  max-width: 43.75rem;
+  padding: 2rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: var(--gray);
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-name {
+  font-size: 3rem;
+}
+
+.card-direction {
+  font-size: 2rem;
+}
+
+.card-skills {
+  margin-top: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.card-skill {
+  font-size: 1.5rem;
+  padding: .2rem .8rem;
+  border-radius: 100vw;
+}

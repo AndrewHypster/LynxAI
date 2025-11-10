@@ -19,7 +19,7 @@ export default function Home() {
           послуги в сфері штучного інтелекту та технологій.
         </p>
         <div className="hero-btns">
-          <SimpleBtn data-color="hero">Наші послуги</SimpleBtn>
+          <SimpleBtn data-color="main">Наші послуги</SimpleBtn>
           <SimpleBtn data-border="gray">Познайомитися з командою</SimpleBtn>
         </div>
       </section>
