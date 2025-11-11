@@ -31,7 +31,7 @@ export default function Home() {
       </section>
 
       <section className="features">
-        <h2 className="features-title">Чому вибирають LynxAI?</h2>
+        <h2 className="features-title bottom-grad">Чому LynxAI?</h2>
         <ul className="features-list">
           <li className="features-item">
             <b className="features-bold">🚀 Інноваційність</b>

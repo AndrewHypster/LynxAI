@@ -14,6 +14,7 @@
 .hero-desc {
   max-width: fit-content;
   font-size: 3rem;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -22,7 +23,6 @@
   margin-top: 4rem;
   gap: 2rem;
   justify-content: center;
-  flex-wrap: wrap;
   display: flex;
 }
 
@@ -56,11 +56,16 @@
 }
 
 .features {
+  padding-left: 10rem;
+  padding-right: 10rem;
   text-align: center;
 }
 
 .features-title {
-  font-size: 4rem;
+  font-size: 6rem;
+}
+.features-title::after {
+  bottom: -1rem;
 }
 
 .features-list {
@@ -96,11 +101,14 @@
   font-size: 1.8rem;
 }
 
-@media (max-width: 480px) {
-  .hero-btns {
-    display: grid;
+@media (max-width: 900px) {
+  .features-title {
+    margin: 0 auto;
   }
+}
+
+@media (max-width: 480px) {
   .hero-btn {
-    width: 40rem;
+    font-size: 2.5rem;
   }
 }

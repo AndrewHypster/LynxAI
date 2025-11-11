@@ -99,6 +99,32 @@ body::-webkit-scrollbar {
 p {
   color: var(--gray-text);
 }
+.bottom-grad {
+  position: relative;
+  width: fit-content;
+}
+.bottom-grad::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background: linear-gradient(
+    90deg,
+    var(--blue-accent),
+    var(--green-main),
+    var(--violet-accent),
+    var(--violet-main),
+    var(--yellow-main),
+    var(--orange-main)
+  );
+  background-size: 200%;
+  border-radius: 100vw;
+  transform: translateY(100%);
+  animation: aside-grad 4s infinite;
+  display: block;
+}
 
 @keyframes gradient {
   0% {

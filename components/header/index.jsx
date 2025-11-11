@@ -114,7 +114,7 @@ export default function Header() {
         </div>
       </div>
 
-      <aside className={`sidebar ${side ? "open" : "close"}`}>
+      <aside className={`sidebar ${side ? "open bottom-grad" : "close"}`}>
         <button
           onClick={() => {
             hideOverlay();
