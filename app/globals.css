@@ -9,12 +9,13 @@
 html {
   font-size: 8px;
   scroll-behavior: smooth;
-  background-color: var(--black);
+  background-color: var(--black-alt);
 }
 body {
   min-height: 100dvh;
+  margin-top: 9rem;
   font-family: var(--Montserrat);
-  color: var(--white);
+  color: var(--white-text);
   flex-direction: column;
   display: flex;
 }
@@ -42,13 +43,13 @@ li {
 }
 a {
   width: fit-content;
-  color: var(--white);
+  color: var(--blue-accent);
   text-decoration: none;
   align-content: center;
 }
 .link-grad {
   position: relative;
-  background: linear-gradient(90deg, var(--white) 50%, var(--main) 50%);
+  background: linear-gradient(90deg, var(--main) 50%, var(--white-text) 50%);
   background-size: 200% auto;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -96,6 +97,10 @@ img {
 
 body::-webkit-scrollbar {
   width: 0px;
+}
+
+p {
+  color: var(--gray-text);
 }
 
 @keyframes gradient {

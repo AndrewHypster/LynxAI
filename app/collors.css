@@ -1,6 +1,52 @@
 :root {
   --main: #a855f7;
-  --white: #f3f4f6;
-  --gray: #1a1a1a;
-  --black: #000;
+  --black-main: #121212;
+  --black-alt: #1e1e1e;
+  --white-text: #e0e0e0;
+  --gray-text: #9a9a9a;
+  --gray-border: #c6c6b4;
+  --violet-main: #7f5e8a;
+  --violet-accent: #b066ff;
+  --blue-accent: #49beff;
+  --green-main: #4ec9ab;
+  --red-error: #ed4b4b;
+  --yellow-main: #f9d600;
+  --orange-main: #d7ba72;
+  --w: #8b00ff;
 }
+
+/* чорний:
+  #1e1e1e
+  #252526
+білий:
+  #d4d4d4
+сірий:
+  #858585
+  #c6c6b4
+  #3e906f
+червоний:
+  #ed4b4b
+  #d16969
+фіолетовий:
+  #7f5e8a
+  #c586c0
+синій:
+  #729cab
+  #6f939e
+  #569ccd
+  #49beff
+  #92dcfe
+зелений:
+  #3e906f
+  #4ec9ab
+  #568d55
+  #7d927a
+  #b5ce98
+жовтий:
+  #3e906f
+  #b2950a
+  #f9d600
+оранжевий:
+  #d7ba72
+  #936a5a
+  #ce8f74 */

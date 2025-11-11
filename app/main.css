@@ -1,17 +1,12 @@
 .hero {
-  background: linear-gradient(var(--black), var(--gray));
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
   justify-items: center;
   gap: 4rem;
   display: grid;
 }
 
 .hero-logo {
-  height: 16rem;
-}
-
-.hero-title {
-  font-size: 7rem;
-  color: var(--main);
+  height: 40rem;
 }
 
 .hero-desc {

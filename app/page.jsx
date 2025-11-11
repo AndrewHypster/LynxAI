@@ -13,7 +13,6 @@ export default function Home() {
           height={100}
           alt="logo"
         />
-        <h1 className="hero-title">LynxAI</h1>
         <p className="hero-desc">
           Інноваційні IT-рішення для вашого бізнесу. Ми пропонуємо найкращі
           послуги в сфері штучного інтелекту та технологій.
