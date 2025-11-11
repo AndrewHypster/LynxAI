@@ -5,48 +5,17 @@ import "./style.css";
 import Image from "next/image";
 import Link from "next/link";
 import { SimpleBtn } from "@/components/btns";
+import db from "@/db.json";
 
 const OurTeam = () => {
   const [colors, setColors] = useState([]);
 
-  const sliderItems = [
-    {
-      img: "/imgs/team/patric.png",
-      name: "Patrik Star",
-      direction: "Створення AI ботів",
-      skills: ["OpenAI", "Python", "React", "Figma"],
-    },
-    {
-      img: "/imgs/team/patric.png",
-      name: "Robert Mont",
-      direction: "Підключення AI до баз даних",
-      skills: ["OpenAI", "PhP", "GitHub", "Mongo DB"],
-    },
-    {
-      img: "/imgs/team/patric.png",
-      name: "Sendi Rosin",
-      direction: "Веб розробка",
-      skills: ["Next.js", "Redux-Toolkit", "API", "Figma"],
-    },
-    {
-      img: "/imgs/team/patric.png",
-      name: "Patrik Star",
-      direction: "Створення AI ботів",
-      skills: ["OpenAI", "Python", "React", "Figma"],
-    },
-    {
-      img: "/imgs/team/patric.png",
-      name: "Robert Mont",
-      direction: "Підключення AI до баз даних",
-      skills: ["OpenAI", "PhP", "GitHub", "Mongo DB"],
-    },
-  ];
+  const team = db.team;
 
   useEffect(() => {
-    setColors([...sliderItems.map(() => Math.floor(Math.random() * 360))]);
+    setColors([...team.map(() => Math.floor(Math.random() * 360))]);
   }, []);
 
-  // 🔹 Компонент, який описує структуру однієї картки
   const CardStructure = ({ item, cardRef }) => (
     <div className="card" ref={cardRef}>
       <Image
@@ -74,7 +43,9 @@ const OurTeam = () => {
         </ul>
       </div>
       <Link href={"/portfolio/" + item.name}>
-        <SimpleBtn className="card-btn" data-color='main'>Портфоліо</SimpleBtn>
+        <SimpleBtn className="card-btn" data-color="main">
+          Портфоліо
+        </SimpleBtn>
       </Link>
     </div>
   );
@@ -90,7 +61,7 @@ const OurTeam = () => {
         </p>
       </div>
 
-      <Slider items={sliderItems} renderItem={CardStructure} />
+      <Slider items={team} renderItem={CardStructure} navigation={true} />
     </section>
   );
 };

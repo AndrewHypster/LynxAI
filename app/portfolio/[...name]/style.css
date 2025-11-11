@@ -1,0 +1,140 @@
+.portfolio {
+  gap: 15rem;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+.portfolio-info {
+  width: 100%;
+  height: fit-content;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  display: grid;
+}
+.portfolio-img {
+  width: 100%;
+  background: var(--white);
+  border-radius: 100vw;
+  display: block;
+}
+
+.portfolio-progects-title {
+  margin-bottom: 4rem;
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--main);
+}
+
+.portfolio-name {
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.portfolio-direction {
+  font-size: 2.5rem;
+}
+.portfolio-skills-title {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+.portfolio-skills {
+  flex-wrap: wrap;
+  gap: 2rem;
+  display: flex;
+}
+
+.portfolio-skill {
+  padding: .4rem 1.8rem;
+  font-size: 2rem;
+  border-radius: 100vw;
+}
+
+.portfolio-desc-title {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.portfolio-desc {
+  grid-column: span 2;
+  font-size: 1.8rem;
+}
+
+
+.card-img {
+  width: 100%;
+  border-radius: 20rem;
+}
+
+.card-name {
+  margin: 1rem;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.card-desc {
+  overflow: hidden;
+  font-size: 2rem;
+  max-height: 5em;
+  text-overflow: ellipsis;
+}
+
+.card-technology {
+  margin: 1.5rem 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.card-tec {
+  padding: .2rem 1.6rem;
+  font-size: 2rem;
+  border-radius: 100vw;
+}
+
+.swiper-wrapper {
+  max-width: 50vw;
+  height: 68rem;
+}
+
+@media (max-width: 1200px) {
+  .portfolio-img {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .portfolio-info {
+    display: block;
+  }
+  .portfolio-skills {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio{
+    display: block;
+  }
+  .portfolio-direction, .portfolio-desc, .card-desc, .card-tec {
+    font-size: 3rem;
+  }
+  .portfolio-skills-title, .portfolio-desc-title {
+    font-size: 6rem;
+  }
+
+  .swiper-wrapper {
+    max-width: 100%;
+    width: 100%;
+    height: 75rem;
+  }
+  .card-name {
+    font-size: 6rem;
+  }
+  .card-tec {
+    padding: 1rem 2rem;
+  }
+  .card-btn {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+}

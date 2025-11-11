@@ -1,0 +1,468 @@
+{
+  "users": [],
+  "team": [
+    {
+      "img": "/imgs/team/patric.png",
+      "name": "Patrik Star",
+      "direction": "Створення AI ботів",
+      "skills": ["OpenAI", "Python", "React", "Figma"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+      "progects": [
+        {
+          "id": 123,
+          "name": "Чат бот з AI",
+          "imgs": [
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "MongoDB", "React.js", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "10000$",
+          "link": "https://www.mantis.works/"
+        },
+        {
+          "id": 123,
+          "name": "Чат бот з AI",
+          "imgs": [
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "MongoDB", "React.js", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "10000$",
+          "link": "https://www.mantis.works/"
+        },
+        {
+          "id": 123,
+          "name": "Чат бот з AI",
+          "imgs": [
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "MongoDB", "React.js", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "10000$",
+          "link": "https://www.mantis.works/"
+        },
+        {
+          "id": 123,
+          "name": "Чат бот з AI",
+          "imgs": [
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "MongoDB", "React.js", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "10000$",
+          "link": "https://www.mantis.works/"
+        },
+        {
+          "id": 123,
+          "name": "Чат бот з AI",
+          "imgs": [
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png",
+            "/imgs/progects/chat-ai/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "MongoDB", "React.js", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "10000$",
+          "link": "https://www.mantis.works/"
+        }
+      ]
+    },
+    {
+      "img": "/imgs/team/patric.png",
+      "name": "Robert Mont",
+      "direction": "Підключення AI до баз даних",
+      "skills": ["OpenAI", "PhP", "GitHub", "Mongo DB"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+      "progects": [
+        {
+          "id": 123,
+          "name": "Prometheus",
+          "imgs": [
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "GitHub", "Mongo DB"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "15000$",
+          "link": "https://prometheusfuels.com/"
+        },
+        {
+          "id": 123,
+          "name": "Prometheus",
+          "imgs": [
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "GitHub", "Mongo DB"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "15000$",
+          "link": "https://prometheusfuels.com/"
+        },
+        {
+          "id": 123,
+          "name": "Prometheus",
+          "imgs": [
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "GitHub", "Mongo DB"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "15000$",
+          "link": "https://prometheusfuels.com/"
+        },
+        {
+          "id": 123,
+          "name": "Prometheus",
+          "imgs": [
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "GitHub", "Mongo DB"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "15000$",
+          "link": "https://prometheusfuels.com/"
+        },
+        {
+          "id": 123,
+          "name": "Prometheus",
+          "imgs": [
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png",
+            "/imgs/progects/prometheus/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "technology": ["OpenAI", "PhP", "GitHub", "Mongo DB"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "15000$",
+          "link": "https://prometheusfuels.com/"
+        }
+      ]
+    },
+    {
+      "img": "/imgs/team/patric.png",
+      "name": "Sendi Rosin",
+      "direction": "Веб розробка",
+      "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+      "progects": [
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://bruno-simon.com/"
+        },
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://bruno-simon.com/"
+        },
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://bruno-simon.com/"
+        },
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png",
+            "/imgs/progects/bruno-simon/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://bruno-simon.com/"
+        }
+      ]
+    },
+    {
+      "img": "/imgs/team/patric.png",
+      "name": "Patrik Star",
+      "direction": "Створення AI ботів",
+      "skills": ["OpenAI", "Python", "React", "Figma"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+      "progects": [
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://activetheory.net/"
+        },
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://activetheory.net/"
+        },
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://activetheory.net/"
+        },
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://activetheory.net/"
+        },
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://activetheory.net/"
+        }
+      ]
+    },
+    {
+      "img": "/imgs/team/patric.png",
+      "name": "Robert Mont",
+      "direction": "Підключення AI до баз даних",
+      "skills": ["OpenAI", "PhP", "GitHub", "Mongo DB"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+      "progects": [
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://activetheory.net/"
+        },
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://activetheory.net/"
+        },
+        {
+          "id": 123,
+          "name": "Резюме",
+          "imgs": [
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png",
+            "/imgs/progects/activetheory/0.png"
+          ],
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio elit, convallis in suscipit non, aliquam dapibus elit. Ut fringilla porta mattis. Integer sodales, risus pulvinar auctor blandit, neque nunc eleifend magna, at dapibus nulla turpis a dui. Proin ac metus vehicula, vestibulum libero quis, egestas dui. Maecenas aliquam, quam nec eleifend bibendum, mauris orci interdum felis, sit amet venenatis nisl lorem ac justo. Nulla pharetra pellentesque erat, id vulputate neque interdum a. Suspendisse porttitor ullamcorper magna, ut bibendum nunc ultricies ut. Etiam non aliquam tortor. Donec ultricies mauris sit amet augue facilisis lacinia. Vivamus non fermentum tortor. Proin consequat ultrices nunc vel gravida. Nullam euismod suscipit feugiat. Morbi ac nulla ut lorem condimentum suscipit. Duis non pulvinar dolor. Nulla faucibus quam non nunc dignissim consectetur.",
+          "skills": ["Next.js", "Redux-Toolkit", "API", "Figma"],
+          "time": {
+            "from": "02.10.2024",
+            "to": "15.05.2025"
+          },
+          "price": "12000$",
+          "link": "https://activetheory.net/"
+        }
+      ]
+    }
+  ]
+}

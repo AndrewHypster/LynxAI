@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useEffect, useRef, useState } from "react";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 
-const Slider = ({ items = [], renderItem: RenderItem }) => {
+const Slider = ({ items = [], renderItem: RenderItem, ...swiper }) => {
   const [slides, setSlides] = useState([]);
   const sliderRef = useRef(null);
   const cardRef = useRef(null);
@@ -51,9 +51,9 @@ const Slider = ({ items = [], renderItem: RenderItem }) => {
 
       {/* Swiper */}
       <Swiper
+        {...swiper}
         ref={sliderRef}
-        modules={[Navigation]} // 🧭 додаємо модуль
-        navigation={true}
+        modules={[Navigation, Autoplay]}
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
