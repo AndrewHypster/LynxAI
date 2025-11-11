@@ -1,7 +1,9 @@
 .hero {
+  padding: 0;
+  padding-bottom: 4rem;
+  background: var(--black-main);
   box-shadow: 0 4px 20px rgba(0,0,0,0.4);
   justify-items: center;
-  gap: 4rem;
   display: grid;
 }
 
@@ -10,17 +12,47 @@
 }
 
 .hero-desc {
-  max-width: 680px;
-  font-size: 2.2rem;
+  max-width: fit-content;
+  font-size: 3rem;
   text-align: center;
 }
 
 .hero-btns {
-  height: 5rem;
+  height: fit-content;
+  margin-top: 4rem;
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
   display: flex;
+}
+
+.hero-btn {
+  font-size: 2rem;
+  font-weight: 800;
+  transition: all .3s;
+  text-transform: uppercase;
+  border: .25rem solid transparent;
+  display: block;
+}
+.hero-btn.violet:hover {
+  color: var(--white-text);
+  background: var(--main);
+}
+
+.hero-btn.violet {
+  border-color: var(--main);
+  color: var(--main)
+}
+.hero-btn.gray {
+  border-color: var(--gray-border);
+  color: var(--gray-border)
+}
+
+
+
+.hero-btn.gray:hover {
+  color: var(--black-alt);
+  background: var(--gray-border);
 }
 
 .features {
@@ -62,4 +94,13 @@
 
 .features-desc {
   font-size: 1.8rem;
+}
+
+@media (max-width: 480px) {
+  .hero-btns {
+    display: grid;
+  }
+  .hero-btn {
+    width: 40rem;
+  }
 }

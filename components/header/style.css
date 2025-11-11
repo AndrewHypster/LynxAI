@@ -166,6 +166,9 @@
   .header {
     height: 10rem;
   }
+  .header-logo-text {
+    font-size: 5rem;
+  }
   .header-logo-img {
     height: 10rem;
   }

@@ -1,20 +1,7 @@
-.simple-btn[data-color='main'] {
-  background-color: var(--main);
-}
-
-.simple-btn[data-color='black'] {
-  background-color: var(--black);
-  border: solid var(--gray) .25rem;
-}
-
-.simple-btn[data-border='gray'] {
-  border: solid var(--gray) .25rem;
-}
-
 .simple-btn {
   height: 100%;
   padding: .5em 1.5em;
-  color: var(--white);
+  color: var(--white-text);
   border-radius: .4em;
   letter-spacing: .1em;
 }

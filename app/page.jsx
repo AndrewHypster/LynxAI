@@ -14,12 +14,19 @@ export default function Home() {
           alt="logo"
         />
         <p className="hero-desc">
-          Інноваційні IT-рішення для вашого бізнесу. Ми пропонуємо найкращі
-          послуги в сфері штучного інтелекту та технологій.
+          Інноваційні IT-рішення для вашого бізнесу
+          <br />
+          Ми пропонуємо найкращі послуги в сфері
+          <br />
+          штучного інтелекту та технологій
         </p>
         <div className="hero-btns">
-          <SimpleBtn data-color="main">Наші послуги</SimpleBtn>
-          <SimpleBtn data-border="gray">Познайомитися з командою</SimpleBtn>
+          <SimpleBtn data-color="main" className="hero-btn violet">
+            Послуги
+          </SimpleBtn>
+          <SimpleBtn data-border="gray" className="hero-btn gray">
+            Команда
+          </SimpleBtn>
         </div>
       </section>
 
