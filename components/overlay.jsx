@@ -31,8 +31,8 @@ export function OverlayProvider({ children }) {
           zIndex: "100",
           width: "100dvw",
           height: "100dvh",
-          background: `color-mix(in srgb, var(--black) ${
-            count > 0 ? "40%" : "0%"
+          background: `color-mix(in srgb, var(--black-main) ${
+            count > 0 ? "60%" : "0%"
           }, transparent)`,
           pointerEvents: count > 0 ? "all" : "none",
           transition: 'all .3s'

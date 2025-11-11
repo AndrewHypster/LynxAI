@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { SimpleBtn } from "../btns";
 import "./style.css";
 import { useOverlay } from "../overlay";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Header() {
   const session = useSession();

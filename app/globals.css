@@ -35,9 +35,6 @@ main {
   flex-direction: column;
   display: flex;
 }
-button:hover {
-  filter: brightness(1.2);
-}
 li {
   list-style: none;
 }
