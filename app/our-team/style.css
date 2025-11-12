@@ -14,47 +14,47 @@
   margin-bottom: 8rem;
 }
 
-.swiper-slide {
+.team .swiper-slide {
   justify-content: center;
   gap: 8rem;
   display: flex !important;
 }
 
-.card {
+.team .card {
   max-width: 45rem;
   width: 100vw;
   padding: 2rem;
   overflow: hidden;
   border-radius: 1rem;
-  background-color: var(--gray);
+  background-color: var(--gray-text);
 }
 
-.card-img {
+.team .card-img {
   width: 100%;
 }
 
-.card-name {
+.team .card-name {
   font-size: 4rem;
 }
 
-.card-direction {
+.team .card-direction {
   font-size: 2.5rem;
 }
 
-.card-skills {
+.team .card-skills {
   margin-top: 1rem;
   gap: 2rem;
   flex-wrap: wrap;
   display: flex;
 }
 
-.card-skill {
+.team .card-skill {
   font-size: 1.8rem;
   padding: .4rem 1rem;
   border-radius: 100vw;
 }
 
-.card-btn {
+.team .card-btn {
   width: 100%;
   height: fit-content;
   margin-top: 2rem;

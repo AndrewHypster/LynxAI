@@ -1,3 +1,9 @@
+@property --angle-grad {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: false;
+}
+
 :root {
   --main: #a855f7;
   --black-main: #121212;
@@ -12,7 +18,9 @@
   --red-error: #ed4b4b;
   --yellow-main: #f9d600;
   --orange-main: #d7ba72;
-  --w: #8b00ff;
+
+  --main-gradient: var(--blue-accent), var(--green-main), var(--violet-accent),
+    var(--violet-main), var(--yellow-main), var(--orange-main);
 }
 
 /* чорний:

@@ -34,21 +34,24 @@ export default function Home() {
         <h2 className="features-title bottom-grad">Чому LynxAI?</h2>
         <ul className="features-list">
           <li className="features-item">
-            <b className="features-bold">🚀 Інноваційність</b>
+            <span className="features-item-icon">🚀</span>
+            <b className="features-bold">Інноваційність</b>
             <p className="features-desc">
               Використовуємо найновіші технології та методи розробки для
               досягнення найкращих результатів.
             </p>
           </li>
           <li className="features-item">
-            <b className="features-bold">👥 Професійна команда</b>
+            <span className="features-item-icon">👥</span>
+            <b className="features-bold">Експерти</b>
             <p className="features-desc">
               Наша команда складається з досвідчених фахівців у галузі IT та
               штучного інтелекту.
             </p>
           </li>
           <li className="features-item">
-            <b className="features-bold">⚡ Швидкість</b>
+            <span className="features-item-icon">⚡</span>
+            <b className="features-bold">Швидкість</b>
             <p className="features-desc">
               Ми забезпечуємо швидку доставку проектів без компромісу щодо
               якості.

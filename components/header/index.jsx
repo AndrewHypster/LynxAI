@@ -19,7 +19,7 @@ export default function Header() {
       <div className="header-wrapper">
         <header className="header">
           <Link
-            href={pathname === "/" ? "#" : "/"}
+            href={pathname === "/" ? "#html" : "/"}
             className="header-logo link-grad"
           >
             <Image

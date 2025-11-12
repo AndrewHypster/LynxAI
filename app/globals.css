@@ -142,4 +142,7 @@ p {
   body {
     margin-top: 10rem;
   }
+  section {
+    padding: 4rem;
+  }
 }
