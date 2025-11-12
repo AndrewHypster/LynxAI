@@ -4,16 +4,16 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 
 html {
   font-size: 8px;
   scroll-behavior: smooth;
-  background-color: var(--black-alt);
+  background-color: var(--black-main);
 }
 body {
   min-height: 100dvh;
-  margin-top: 9rem;
   font-family: var(--Montserrat);
   color: var(--white-text);
   flex-direction: column;
@@ -22,14 +22,13 @@ body {
 button {
   border: none;
   background: none;
-  cursor: pointer;
   transition: all 0.3s;
 }
 section {
-  padding: 12rem 4rem 4rem;
+  padding: 8rem 4rem;
 }
 main {
-  padding-bottom: 8rem;
+  margin-top: 9rem;
   flex: 1 0 auto;
   justify-content: center;
   flex-direction: column;
@@ -139,7 +138,7 @@ p {
   html {
     font-size: 1.33vw;
   }
-  body {
+  main {
     margin-top: 10rem;
   }
   section {

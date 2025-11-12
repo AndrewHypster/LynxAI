@@ -4,6 +4,7 @@ import { Providers } from "@/components/Providers";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { OverlayProvider } from "@/components/overlay";
+import CustomCursor from "@/components/cursor"
 
 export const metadata: Metadata = {
   title: "LynxAI",
@@ -23,6 +24,7 @@ export default function RootLayout({
       <Providers>
         <body className={`antialiased`}>
           <OverlayProvider>
+            <CustomCursor />
             <Header />
             <main>{children}</main>
             <Footer />
