@@ -61,6 +61,7 @@
 .header-btn {
   height: fit-content;
   font-size: 2rem;
+  background-color: var(--main);
 }
 
 .header-burger {

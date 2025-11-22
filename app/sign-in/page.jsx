@@ -2,29 +2,51 @@
 import { Suspense, useState } from "react";
 import { GoogleButton } from "@/components/GoogleButton";
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import "./style.css";
 import Image from "next/image";
-import Link from "next/link";
+// ❗️ Прибрано непотрібний Link
 import { SimpleBtn } from "@/components/btns";
 
 function SignInContent() {
   const router = useRouter();
-  const [passShow, usePassShow] = useState(false)
+  const searchParams = useSearchParams();
+
+  // ⭐️ ВИПРАВЛЕНО: Правильне оголошення useState ⭐️
+  const [passShow, setPassShow] = useState(false);
+
+  // Отримуємо цільовий URL: або з параметрів, або за замовчуванням '/profile'
+  const defaultCallbackUrl = searchParams.get("callbackUrl") || "/profile";
+
+  // --- Обробка входу через Credentials (Форма) ---
   const handleSubmit = async (event) => {
     event.preventDefault();
-
     const formData = new FormData(event.currentTarget);
+
     const res = await signIn("credentials", {
       email: formData.get("email"),
       password: formData.get("password"),
-      redirect: false,
+
+      // Дозволяємо NextAuth перенаправити відповідно до логіки в auth.ts
+      redirect: true,
+      callbackUrl: defaultCallbackUrl,
     });
-    if (res && !res.error) {
-      router.push("./profile");
-    } else {
-      console.log(res);
+
+    // Цей блок виконається, лише якщо redirect: false (для відстеження помилок)
+    // Оскільки ми використовуємо redirect: true, тут можна залишити лише обробку помилки
+    if (res && res.error) {
+      console.error("Помилка входу:", res.error);
+      // Тут можна показати сповіщення користувачеві про неправильний логін/пароль
     }
+  };
+
+  // --- Обробка входу через Google ---
+  const handleGoogleSignIn = () => {
+    // Викликаємо signIn з провайдером 'google'
+    signIn("google", {
+      redirect: true,
+      callbackUrl: defaultCallbackUrl,
+    });
   };
 
   return (
@@ -53,20 +75,33 @@ function SignInContent() {
           <div className="input-box">
             <input
               className="signin-inpt"
-              type={passShow?'text': "password"}
+              type={passShow ? "text" : "password"}
               name="password"
               id="password"
               autoComplete="current-password"
               required
             />
-            <Link className="inpt-shov-btn" href='' onClick={()=>usePassShow(!passShow)}>{passShow?'Сховати':'Показати'}</Link>
+            {/* ⭐️ ВИПРАВЛЕНО: Використовуємо setPassShow та e.preventDefault() ⭐️ */}
+            <a
+              className="inpt-shov-btn"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault(); // Запобігаємо переходу
+                setPassShow(!passShow); // Правильний сеттер
+              }}
+            >
+              {passShow ? "Сховати" : "Показати"}
+            </a>
           </div>
         </div>
 
-        <SimpleBtn className="signin-btn" type="submit" data-color='main'>
+        <SimpleBtn className="signin-btn" type="submit" data-color="main">
           Увійти
         </SimpleBtn>
-        <GoogleButton />
+
+        {/* ⭐️ Оновлено: Передаємо обробник для Google ⭐️ */}
+        {/* Припускаємо, що GoogleButton використовує переданий onClick */}
+        <GoogleButton onClick={handleGoogleSignIn} />
       </form>
     </div>
   );

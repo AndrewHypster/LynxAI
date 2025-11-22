@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { OverlayProvider } from "@/components/overlay";
 import CustomCursor from "@/components/cursor"
+import Chat from "@/components/chat-ai";
 
 export const metadata: Metadata = {
   title: "LynxAI",
@@ -27,6 +28,8 @@ export default function RootLayout({
             <CustomCursor />
             <Header />
             <main>{children}</main>
+            <Chat />
+
             <Footer />
           </OverlayProvider>
         </body>

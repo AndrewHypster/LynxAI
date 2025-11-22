@@ -32,6 +32,10 @@
   display: grid;
 }
 
+.signin-btn {
+  background-color: var(--main);
+}
+
 .inpt-shov-btn {
   color: var(--white);
   margin-right: 2rem;

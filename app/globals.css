@@ -4,7 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  cursor: none;
+  /* cursor: none; */
 }
 
 html {
@@ -28,6 +28,7 @@ section {
   padding: 8rem 4rem;
 }
 main {
+  position: relative;
   margin-top: 9rem;
   flex: 1 0 auto;
   justify-content: center;
