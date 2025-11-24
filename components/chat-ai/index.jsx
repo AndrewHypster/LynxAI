@@ -11,6 +11,7 @@ const Chat = () => {
         "Вітаю! **Компанія LynxAI**. Я ваш AI-консультант. Чим я можу допомогти вам сьогодні?",
     },
   ]);
+  const [isOpen, setIsOpen] = useState(false)
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
@@ -74,11 +75,17 @@ const Chat = () => {
   };
 
   return (
-    <div className="chat-container">
+    <div className={`chat-container ${isOpen ? "open" : ""}`}>
       <div className="chat-header">
         <h3 className="chat-title">AI асистент</h3>
+        <button
+          className="chat-header-btn tran03s"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <img src="/imgs/icons/arrow-down.svg" alt="" />
+        </button>
       </div>
-      <div className="chat-content">
+      <div className="chat-content tran03s">
         <div className="message-list">
           {messages.map((msg, index) => (
             <div key={index} className={`message ${msg.role}`}>
@@ -102,7 +109,7 @@ const Chat = () => {
             placeholder="Введіть ваше запитання про товари..."
             disabled={isLoading}
           />
-          <button type="submit" disabled={isLoading}>
+          <button className="chat-send" type="submit" disabled={isLoading}>
             Надіслати
           </button>
         </form>

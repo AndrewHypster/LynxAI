@@ -28,7 +28,6 @@ section {
   padding: 8rem 4rem;
 }
 main {
-  position: relative;
   margin-top: 9rem;
   flex: 1 0 auto;
   justify-content: center;
@@ -124,6 +123,10 @@ p {
   transform: translateY(100%);
   animation: aside-grad 4s infinite;
   display: block;
+}
+
+.tran03s {
+  transition: all .3s;
 }
 
 @keyframes gradient {
