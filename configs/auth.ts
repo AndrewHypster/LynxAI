@@ -48,19 +48,23 @@ export const authConfig: AuthOptions = {
           const role = ADMIN_EMAILS.includes(currentUser.email)
             ? "admin"
             : "user";
-
+          console.log("✅ Authorize SUCCESS. Returning user object.",withoutPassword,
+          role);
           return {
             ...withoutPassword,
             role: role, // Додаємо роль до об'єкта, що повертається
           } as User;
         }
-
+        console.log("❌ Authorize FAILED. Returning null.");
         return null;
       },
     }),
   ],
   pages: {
     signIn: "/sign-in",
+  },
+  session: {
+    strategy: "jwt",
   },
 
   // ⭐️ 2. ДОДАВАННЯ КОЛБЕКІВ ⭐️
@@ -76,6 +80,7 @@ export const authConfig: AuthOptions = {
           // Обчислюємо роль для Google Provider (де 'user.email' доступний)
           role = ADMIN_EMAILS.includes(user.email as string) ? "admin" : "user";
         }
+        console.log(user, token, 15353);
 
         token.role = role; // Додаємо роль до токена
       }
@@ -86,13 +91,19 @@ export const authConfig: AuthOptions = {
       if (token.role) {
         session.user.role = token.role as "admin" | "user"; // Передаємо роль у сесію
       }
+      console.log("session, token");
+
       return session;
     },
 
     async signIn({ user }) {
-      // ⭐️ 3. ПЕРЕНАПРАВЛЕННЯ НА ОСНОВІ РОЛІ ⭐️
-
-      return '/profile'
+      const role = ADMIN_EMAILS.includes(user.email as string)
+        ? "admin"
+        : "user";
+      if (role === "admin") {
+        return "/dashboard"; // Приклад перенаправлення адміністратора
+      }
+      return "/profile"; // Перенаправлення звичайного користувача
     },
   },
 };

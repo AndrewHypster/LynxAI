@@ -16,6 +16,8 @@ const Chat = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
+  useEffect(() => setIsOpen(true), []);
+
   const scrollToBottom = () => {
     // Перевіряємо, чи існує елемент
     messagesEndRef.current?.scrollIntoView({

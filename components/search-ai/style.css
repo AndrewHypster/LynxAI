@@ -1,0 +1,14 @@
+.search-wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.search-inpt {
+  font-size: 4rem;
+}
+
+.search-results {
+  font-size: 4rem;
+  gap: 2rem;
+  display: grid;
+}

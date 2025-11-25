@@ -12,6 +12,7 @@ export async function middleware(req: NextRequest) {
   // ----------------------------------------------------
 
   const protectedRoutes = ["/dashboard", "/profile", "/settings", "/orders"];
+console.log(token);
 
   if (!token) {
     if (protectedRoutes.some((route) => pathname.startsWith(route))) {
@@ -30,21 +31,21 @@ export async function middleware(req: NextRequest) {
   if (token && pathname.startsWith("/dashboard")) {
     const userRole = token.role; // Властивість 'role' має бути в токені завдяки колбекам
 
-    if (userRole !== "admin") {
-      // Якщо користувач авторизований, але не адміністратор,
-      // перенаправляємо його на його особистий розділ, наприклад, /profile.
-      return NextResponse.redirect(new URL("/profile", req.url));
-    }
+    // if (userRole !== "admin") {
+    //   // Якщо користувач авторизований, але не адміністратор,
+    //   // перенаправляємо його на його особистий розділ, наприклад, /profile.
+    //   return NextResponse.redirect(new URL("/profile", req.url));
+    // }
   }
 
   if (token && pathname.startsWith("/profile")) {
     const userRole = token.role; // Властивість 'role' має бути в токені завдяки колбекам
 
-    if (userRole === "admin") {
-      // Якщо користувач авторизований, але не адміністратор,
-      // перенаправляємо його на його особистий розділ, наприклад, /profile.
-      return NextResponse.redirect(new URL("/dashboard", req.url));
-    }
+    // if (userRole === "admin") {
+    //   // Якщо користувач авторизований, але не адміністратор,
+    //   // перенаправляємо його на його особистий розділ, наприклад, /profile.
+    //   return NextResponse.redirect(new URL("/dashboard", req.url));
+    // }
   }
 
   // Якщо всі перевірки пройдені, дозволяємо доступ

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import { OverlayProvider } from "@/components/overlay";
-import CustomCursor from "@/components/cursor"
-import Chat from "@/components/chat-ai";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { OverlayProvider } from "../components/overlay";
+import CustomCursor from "../components/cursor"
+import Chat from "../components/chat-ai";
 
 export const metadata: Metadata = {
   title: "LynxAI",

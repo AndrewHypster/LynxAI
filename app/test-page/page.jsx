@@ -1,8 +1,9 @@
-import Chat from "../../components/chat-ai"
+"use client";
+
+import SearchAI from "../../components/search-ai";
 
 const TestPage = () => {
-  return (
-<></>  )
-}
+  return <SearchAI />;
+};
 
-export default TestPage
+export default TestPage;

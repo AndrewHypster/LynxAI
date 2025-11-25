@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { SimpleBtn } from "../btns";
 import "./style.css";
 import { useOverlay } from "../overlay";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const session = useSession();
@@ -14,6 +14,9 @@ export default function Header() {
   const { showOverlay, hideOverlay } = useOverlay();
   const [side, useSide] = useState(false);
 
+  useEffect(() =>
+  console.log(session, 'session1'), [session]
+  )
   return (
     <>
       <div className="header-wrapper">
@@ -39,7 +42,7 @@ export default function Header() {
             <Link className="header-link link-grad" href="/our-team">
               Команда
             </Link>
-            <Link className="header-link link-grad" href="#">
+            <Link className="header-link link-grad" href="/test-page">
               Послуги
             </Link>
           </nav>
