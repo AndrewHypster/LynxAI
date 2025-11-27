@@ -1,9 +1,9 @@
 "use client";
 
-import SearchAI from "../../components/search-ai";
+import AIDescriptin from "../../components/desc-ai";
 
 const TestPage = () => {
-  return <SearchAI />;
+  return <AIDescriptin />;
 };
 
 export default TestPage;
