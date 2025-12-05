@@ -1,9 +1,9 @@
 "use client";
 
-import AIDescriptin from "../../components/desc-ai";
+import VoiceAssistant from "../../components/voice-assistant";
 
 const TestPage = () => {
-  return <AIDescriptin />;
+  return <VoiceAssistant />
 };
 
 export default TestPage;
