@@ -47,7 +47,9 @@ function SignInContent() {
 
   // --- Обробка входу через Google ---
   const handleGoogleSignIn = async () => {
-    const res = await signIn("google", { redirect: true });
+    const res = await signIn("google", { redirect: false });
+    console.log('sign-in res', res);
+    
     if (res?.ok) {
       const session = await getSession();
       router.push(session.user.role === "admin" ? "/dashboard" : "/profile");
