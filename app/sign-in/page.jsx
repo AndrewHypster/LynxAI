@@ -1,33 +1,26 @@
 "use client";
 import { Suspense, useState } from "react";
 import { GoogleButton } from "@/components/GoogleButton";
-import { signIn } from "next-auth/react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { signIn, getSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import "./style.css";
 import Image from "next/image";
-// ❗️ Прибрано непотрібний Link
 import { SimpleBtn } from "@/components/btns";
 
 function SignInContent() {
   const router = useRouter();
-  const searchParams = useSearchParams();
-
-  // ⭐️ ВИПРАВЛЕНО: Правильне оголошення useState ⭐️
   const [passShow, setPassShow] = useState(false);
-
-  // Отримуємо цільовий URL: або з параметрів, або за замовчуванням '/profile'
   const defaultCallbackUrl = "/profile";
 
-  // --- Обробка входу через Credentials (Форма) ---
-  const handleSubmit = async (event) => {
+  // --- Credentials login ---
+  const handleSubmit = async () => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
     const res = await signIn("credentials", {
       email: formData.get("email"),
       password: formData.get("password"),
-      redirect: true,
-      callbackUrl: defaultCallbackUrl,
+      redirect: false, // робимо redirect false, щоб спочатку отримати сесію
     });
 
     if (res?.error) {
@@ -35,28 +28,21 @@ function SignInContent() {
       return;
     }
 
-    if (res?.ok) {
-      const sessionRes = await getSession(); // отримуємо сесію після логіну
-      if (sessionRes?.user.role === "admin") {
-        router.push("/dashboard");
-      } else {
-        router.push("/profile");
-      }
+    // Отримуємо сесію після логіну
+    const session = await getSession();
+    if (session?.user.role === "admin") {
+      router.push("/dashboard");
+    } else {
+      router.push("/profile");
     }
   };
 
-  // --- Обробка входу через Google ---
+  // --- Google login ---
   const handleGoogleSignIn = async () => {
-    const { data: session, status } = useSession();
-    const router = useRouter();
-
-    useEffect(() => {
-      if (status === "authenticated") {
-        router.push(session.user.role === "admin" ? "/dashboard" : "/profile");
-      }
-    }, [status, session, router]);
-
-    return null;
+    // Викликаємо Google login з redirect true
+    await signIn("google", { redirect: true, callbackUrl: defaultCallbackUrl });
+    // Після повернення на сторінку, useEffect або окремий useSession буде робити редірект за роллю
+    // Тут ми не можемо отримати res, бо браузер редіректить на Google
   };
 
   return (
@@ -80,6 +66,7 @@ function SignInContent() {
             />
           </div>
         </div>
+
         <div className="signin-item">
           <label htmlFor="password">Пароль</label>
           <div className="input-box">
@@ -91,13 +78,12 @@ function SignInContent() {
               autoComplete="current-password"
               required
             />
-            {/* ⭐️ ВИПРАВЛЕНО: Використовуємо setPassShow та e.preventDefault() ⭐️ */}
             <a
               className="inpt-shov-btn"
               href="#"
               onClick={(e) => {
-                e.preventDefault(); // Запобігаємо переходу
-                setPassShow(!passShow); // Правильний сеттер
+                e.preventDefault();
+                setPassShow(!passShow);
               }}
             >
               {passShow ? "Сховати" : "Показати"}
@@ -109,8 +95,6 @@ function SignInContent() {
           Увійти
         </SimpleBtn>
 
-        {/* ⭐️ Оновлено: Передаємо обробник для Google ⭐️ */}
-        {/* Припускаємо, що GoogleButton використовує переданий onClick */}
         <GoogleButton onClick={handleGoogleSignIn} />
       </form>
     </div>
