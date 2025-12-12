@@ -78,8 +78,14 @@ export const authConfig: AuthOptions = {
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
-        token.id = user.id;
-        token.role = user.role;
+        token.id = user.id || ""; // якщо є id
+        token.name = user.name;
+        token.email = user.email;
+
+        // ⭐️ визначаємо роль для Google
+        token.role =
+          user.role ||
+          (user.email && ADMIN_EMAILS.includes(user.email) ? "admin" : "user");
       }
       return token;
     },
