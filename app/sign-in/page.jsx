@@ -16,7 +16,7 @@ function SignInContent() {
   const [passShow, setPassShow] = useState(false);
 
   // Отримуємо цільовий URL: або з параметрів, або за замовчуванням '/profile'
-  const defaultCallbackUrl = searchParams.get("callbackUrl") || "/profile";
+  const defaultCallbackUrl = "/profile";
 
   // --- Обробка входу через Credentials (Форма) ---
   const handleSubmit = async (event) => {
@@ -26,19 +26,23 @@ function SignInContent() {
     const res = await signIn("credentials", {
       email: formData.get("email"),
       password: formData.get("password"),
-
-      // Дозволяємо NextAuth перенаправити відповідно до логіки в auth.ts
       redirect: true,
       callbackUrl: defaultCallbackUrl,
     });
 
-    // Цей блок виконається, лише якщо redirect: false (для відстеження помилок)
-    // Оскільки ми використовуємо redirect: true, тут можна залишити лише обробку помилки
-    if (res && res.error) {
+    if (res?.error) {
       console.error("Помилка входу:", res.error);
-      // Тут можна показати сповіщення користувачеві про неправильний логін/пароль
+      return;
     }
-    
+
+    if (res?.ok) {
+      const sessionRes = await getSession(); // отримуємо сесію після логіну
+      if (sessionRes?.user.role === "admin") {
+        router.push("/dashboard");
+      } else {
+        router.push("/profile");
+      }
+    }
   };
 
   // --- Обробка входу через Google ---

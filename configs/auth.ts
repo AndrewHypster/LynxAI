@@ -8,16 +8,19 @@ import { DefaultSession } from "next-auth";
 // --- ⚠️ РОЗШИРЕННЯ ТИПІВ (В ідеалі має бути у next-auth.d.ts) ---
 declare module "next-auth" {
   interface User {
+    id: string;
     role?: "admin" | "user";
   }
   interface Session extends DefaultSession {
     user: {
+      id: string;
       role?: "admin" | "user";
     } & DefaultSession["user"];
   }
 }
 declare module "next-auth/jwt" {
   interface JWT extends DefaultJWT {
+    id: string;
     role?: "admin" | "user";
   }
 }
@@ -42,18 +45,22 @@ export const authConfig: AuthOptions = {
         );
 
         if (currentUser && currentUser.password === credentials.password) {
-          const { password, ...withoutPassword } = currentUser;
-
           // ⭐️ 1. ВИЗНАЧЕННЯ І ДОДАВАННЯ РОЛІ ДЛЯ CREDENTIALS ⭐️
           const role = ADMIN_EMAILS.includes(currentUser.email)
             ? "admin"
             : "user";
-          console.log("✅ Authorize SUCCESS. Returning user object.",withoutPassword,
-          role);
+          console.log(
+            "✅ Authorize SUCCESS. Returning user object.",
+            currentUser,
+            role
+          );
+
           return {
-            ...withoutPassword,
-            role: role, // Додаємо роль до об'єкта, що повертається
-          } as User;
+            id: String(currentUser.id),
+            name: currentUser.name,
+            email: currentUser.email,
+            role: ADMIN_EMAILS.includes(currentUser.email) ? "admin" : "user",
+          };
         }
         console.log("❌ Authorize FAILED. Returning null.");
         return null;
@@ -71,39 +78,17 @@ export const authConfig: AuthOptions = {
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
-        let role: "admin" | "user";
-
-        if ((user as User).role) {
-          // Використовуємо роль, встановлену у Credentials Provider
-          role = (user as User).role!;
-        } else {
-          // Обчислюємо роль для Google Provider (де 'user.email' доступний)
-          role = ADMIN_EMAILS.includes(user.email as string) ? "admin" : "user";
-        }
-        console.log(user, token, 15353);
-
-        token.role = role; // Додаємо роль до токена
+        token.id = user.id;
+        token.role = user.role;
       }
       return token;
     },
 
     async session({ session, token }) {
-      if (token.role) {
-        session.user.role = token.role as "admin" | "user"; // Передаємо роль у сесію
-      }
-      console.log("session, token");
-
+      session.user = session.user || {};
+      session.user.id = token.id;
+      session.user.role = token.role;
       return session;
-    },
-
-    async signIn({ user }) {
-      const role = ADMIN_EMAILS.includes(user.email as string)
-        ? "admin"
-        : "user";
-      if (role === "admin") {
-        return "/dashboard"; // Приклад перенаправлення адміністратора
-      }
-      return "/profile"; // Перенаправлення звичайного користувача
     },
   },
 };
