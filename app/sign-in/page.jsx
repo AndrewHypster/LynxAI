@@ -46,12 +46,12 @@ function SignInContent() {
   };
 
   // --- Обробка входу через Google ---
-  const handleGoogleSignIn = () => {
-    // Викликаємо signIn з провайдером 'google'
-    signIn("google", {
-      redirect: true,
-      callbackUrl: defaultCallbackUrl,
-    });
+  const handleGoogleSignIn = async () => {
+    const res = await signIn("google", { redirect: false });
+    if (res?.ok) {
+      const session = await getSession();
+      router.push(session.user.role === "admin" ? "/dashboard" : "/profile");
+    }
   };
 
   return (
