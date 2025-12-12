@@ -47,13 +47,16 @@ function SignInContent() {
 
   // --- Обробка входу через Google ---
   const handleGoogleSignIn = async () => {
-    const res = await signIn("google", { redirect: false });
-    console.log('sign-in res', res);
-    
-    if (res?.ok) {
-      const session = await getSession();
-      router.push(session.user.role === "admin" ? "/dashboard" : "/profile");
-    }
+    const { data: session, status } = useSession();
+    const router = useRouter();
+
+    useEffect(() => {
+      if (status === "authenticated") {
+        router.push(session.user.role === "admin" ? "/dashboard" : "/profile");
+      }
+    }, [status, session, router]);
+
+    return null;
   };
 
   return (
