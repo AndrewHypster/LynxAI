@@ -1,0 +1,151 @@
+.aidesc-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.aidesc-form textarea {
+  max-width: 480px;
+  width: 80vw;
+  height: 15rem;
+  padding: 2rem 4rem;
+  border: 2px solid var(--gray-text);
+  border-radius: 2rem;
+  background: transparent;
+  color: var(--white-text);
+  font-size: 2rem;
+  display: block;
+}
+
+.aidesc-btn {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: block;
+}
+
+.aidesc-output {
+  max-width: 480px;
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.aidesc-output * {
+  color: var(--white-text);
+}
+
+.product section {
+  padding: 4rem 10rem;
+}
+
+.product-slider {
+  width: 34%;
+  display: flex;
+}
+
+.product-slider img {
+  width: 45rem;
+  margin: 0 auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+.product-title, .prodct-characteristics-title, .prodct-desc-title, .product-reviews-title {
+  font-size: 6rem;
+}
+
+.product-prices {
+  width: fit-content;
+  margin-top: 4rem;
+  align-items: baseline;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  display: grid;
+}
+
+.product-price-title {
+  font-size: 3rem;
+  grid-column: span 2;
+}
+
+.product-price {
+  font-size: 2.5rem;
+}
+
+.product-price.new {
+  color: rgb(31, 203, 31);
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+.product-price.old {
+  color: rgb(218, 111, 89);
+  text-decoration: line-through;
+}
+
+.product-bye {
+  height: fit-content;
+  margin-top: 4rem;
+  background: var(--main);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 901px) {
+  .product section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .product-slider {
+    width: 100%;
+    margin-bottom: 5rem;
+    display: flex;
+  }
+}
+
+.prodct-characteristics-list {
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  display: grid;
+}
+
+.prodct-characteristics-item {
+  font-size: 3rem;
+  gap: 2rem;
+  display: flex;
+}
+
+.prodct-desc, .product-reviews-name {
+  font-size: 3rem;
+}
+
+.product-reviews-list {
+  margin-top: 2rem;
+  gap: 4rem;
+  display: grid;
+}
+
+.product-reviews-item {
+  max-width: 80rem;
+  padding: 2rem 4rem;
+  border: .25rem solid var(--white-text);
+  border-radius: 2rem;
+}
+
+.product-reviews-rating {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+}
+
+.product-reviews-text {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.product-create-review button {
+  background-color: var(--main);
+  display: block;
+}

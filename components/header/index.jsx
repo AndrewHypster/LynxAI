@@ -42,7 +42,7 @@ export default function Header() {
             <Link className="header-link link-grad" href="/our-team">
               Команда
             </Link>
-            <Link className="header-link link-grad" href="/test-page">
+            <Link className="header-link link-grad" href="/services">
               Послуги
             </Link>
           </nav>
@@ -160,7 +160,7 @@ export default function Header() {
             Команда
           </Link>
           <Link
-            href="#"
+            href="/services"
             className="sidebar-link link-grad"
             onClick={() => {
               hideOverlay();

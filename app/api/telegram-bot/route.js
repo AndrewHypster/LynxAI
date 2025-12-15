@@ -16,7 +16,7 @@ async function sendTelegramNotification(message) {
       body: JSON.stringify({
         chat_id: CHAT_ID,
         text: message,
-        parse_mode: "HTML",
+        parse_mode: "Markdown",
       }),
     });
     console.log("Telegram notification sent successfully.");

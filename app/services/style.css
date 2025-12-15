@@ -1,0 +1,47 @@
+.services {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.services-title {
+  margin: 0 auto;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.services-list {
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.services-list a {
+  height: 100%;
+  display: block;
+}
+
+.services-item {
+  max-width: 45rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: .25rem solid var(--main);
+  border-radius: 1rem;
+  transition: all .3s;
+}
+
+.services-item:hover {
+  transform: translateY(5%);
+}
+
+.services-item-title {
+  margin-bottom: .8rem;
+  font-size: 3rem;
+  color: var(--white-text);
+}
+
+.services-item-desc {
+  font-size: 2rem;
+  color: var(--gray-border);
+}

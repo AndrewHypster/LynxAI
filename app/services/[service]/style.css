@@ -1,0 +1,21 @@
+.service-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.chat-container {
+  display: none;
+}
+
+.service-chat {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+.service-chat .chat-container {
+  position: static;
+  display: block;
+}
