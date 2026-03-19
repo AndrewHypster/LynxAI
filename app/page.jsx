@@ -1,5 +1,6 @@
 import { SimpleBtn } from "@/components/btns";
 import Image from "next/image";
+import Link from "next/link";
 import "./main.css";
 
 export default function Home() {
@@ -21,12 +22,16 @@ export default function Home() {
           штучного інтелекту та технологій
         </p>
         <div className="hero-btns">
-          <SimpleBtn data-color="main" className="hero-btn violet">
-            Послуги
-          </SimpleBtn>
-          <SimpleBtn data-border="gray" className="hero-btn gray">
-            Команда
-          </SimpleBtn>
+          <Link href="/services">
+            <SimpleBtn data-color="main" className="hero-btn violet">
+              Послуги
+            </SimpleBtn>
+          </Link>
+          <Link href="/our-team">
+            <SimpleBtn data-border="gray" className="hero-btn gray">
+              Команда
+            </SimpleBtn>
+          </Link>
         </div>
       </section>
 

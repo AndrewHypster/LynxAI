@@ -36,7 +36,7 @@ const OurServices = () => {
             </p>
           </li>
         </Link>
-        <Link href="#">
+        {/* <Link href="#">
           <li className="services-item">
             <h3 className="services-item-title">SEO від AI</h3>
             <p className="services-item-desc">
@@ -65,7 +65,7 @@ const OurServices = () => {
               вибачення і надсилає коментар вам в телеграм бот чи на пошту.
             </p>
           </li>
-        </Link>
+        </Link> */}
       </ul>
     </div>
   );
